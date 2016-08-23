@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<!-- todo: What story am I telling?  What is the underlying theme -->
+				<section>
+					<h1>Queenstown GovHack</h1>
+				</section>
+				<section>
+					<h2>Was a small affair</h2>
+					<ul>
+						<li class="fragment">Around 17 people registered
+						<li class="fragment">Four people turned up Friday night.  One left after two hours</li>
+						<li class="fragment">Three more turned up on Saturday morning</li>
+						<li class="fragment">Snowed all week and was still snowing</li>
+						<li class="fragment">Mountain road to Wanaka was closed</li>
+						<li class="fragment">Winter is not the best time for us</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Our People</h2>
+					<ul>
+						<li>Two devs from the local council - opened up some QT specific datasets</li>
+						<li>Swedish Junior PHP Dev</li>
+						<li>A French national, here on holiday, who ran a couple of medical AI companies back in Paris</li>
+						<li>The son of the organiser</li>
+					</ul>
+					<p>And yet, we made three teams!</p>
+				</section>
+				<section>
+					<h2>Our Projects</h2>
+					<ul>
+						<li>Using map overlay data for local Tracks and Trails - see the status of the tracks and report issues</li>
+						<li>Lost and Found Dog app, hooking into Dog Registration database to directly contact an owner</li>
+						<li>A tourism app to deliver spoken word accounts of real experiences when in proximity</li>
+					</ul>
+					<p>
+						First two directly influenced by our council attendees, and their knowledge of what the council wanted
+					</p>
+					<p>
+						Potentially solving real problems
+					</p>
+				</section>
+				<section>
+					<h2>What Really Worked</h2>
+					<ul>
+						<li>Small number, good camaraderie</li>
+						<li>Organised well - no food, refreshment or internet issues</li>
+						<li>Two of three projects finished with working demo, video and a website</li>
+						<li>Build for next year</li>
+					</ul>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
